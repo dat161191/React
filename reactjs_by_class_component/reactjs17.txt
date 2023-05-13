@@ -1,0 +1,18 @@
+1/React chạy ntn?
+	reder file index.html đầu tiên (chạy div có id='root') nhờ webpage => chạy index.js => chạy file App.js
+2/ folder assets: global dùng lưu những thứ public ra ngoài như img, audio, js...
+3/ component: dùng tạo component và sare lại dùng được ở nhiều nơi (tái sử dụng source code)
+4/ routes: tạo đường dẫn
+5/ store: nơi viết redux
+6/ style: viết css hoặc scss
+7/ until: viết các function dùng chung
+8/ views: viết trang hiển thị vs người dùng
+9/ service: gọi API kết nối DB
+10/ chạy lệnh npm i --save sass để sử dụng scss
+11/ States: dùng để lưu đổi trạng thái thuộc tính 
+12/ Cơ chế re-render: khi có sự thay đổi sử dụng hàm setState() thì sẽ gọi React sẽ gọi lại hàm render() => re-render cập nhật sự thay đổi
+	=> giúp giao diện có sự thay đổi mà không cần reload lại
+13/ font-size: calc(10px + 2vmin): ính toán kích thước chữ bằng cách cộng 10 pixel với 2% của chiều rộng hoặc chiều cao của viewport, 
+	tùy thuộc vào giá trị nhỏ hơn. Kết quả là kích thước chữ sẽ được điều chỉnh tự động dựa trên kích thước của viewport;
+14/ event.preventDefault(): ngăn chặn các hành vi mặc định của 1 sự kiện nào đó...VD k load lại trang khi sử dụng alert();
+15/ Destructuring: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
