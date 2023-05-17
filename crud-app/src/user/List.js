@@ -1,17 +1,14 @@
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {Link, useNavigate} from "react-router-dom";
-import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Swal from 'sweetalert';
-import Modal from 'react-modal';
 import './ModalDetail.css'
 
 export function ListUser() {
 const navigate = useNavigate();
     const [list, setList] = useState([]);
     const [userModal, setUserModal] = useState('');
-    const [modalIsOpen, setModalIsOpen] = useState(false);
 
     function getList() {
         axios.get("http://localhost:3000/user").then(res => {
@@ -45,14 +42,6 @@ const navigate = useNavigate();
             });
     }
 
-    const openModal = (user) => {
-        setUserModal(user);
-        setModalIsOpen(true);
-    };
-    const closeModal = () => {
-        setUserModal('');
-        setModalIsOpen(false);
-    };
 
     function handleModal(ele) {
         console.log(ele)

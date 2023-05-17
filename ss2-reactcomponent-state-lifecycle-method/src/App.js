@@ -34,7 +34,7 @@ function App() {
                     <Route path="/FunctionComponent" element={<FunctionComponent/>}/>
                     <Route path="/EventButton" element={<EventButton/>}/>
                     <Route path="/ChangeColor" element={<ChangeColor/>}/>
-                    {/*======SS3: HOOK==========*/}
+                    {/*======SS3: HOOK ==========*/}
                     <Route path="/Counter" element={<Counter/>}/>
                     <Route path="/Selector" element={<Selector/>}/>
                     <Route path="/MyClock" element={<MyClock/>}/>
