@@ -102,8 +102,16 @@ const QuizApi = () => {
     // Hàm sử lý khi người dùng bấm nút làm lại
     const PlayAgain = () => {
         setShowResult(false);
+        setResult({
+            score: 0,
+            correctAnswers: 0,
+            wrongAnswers: 0
+        });
+        const newTimeStart = Date.now();
+        setTimeStart(newTimeStart);
         getQuizs();
     }
+
     return (
         <div className="quizApi">
             {loading ? <i className="fa-solid fa-spinner fa-spin-pulse text-light" style={{ fontSize: "40px" }}> Loading</i>
